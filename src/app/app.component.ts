@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CBS-group';
+
+  constructor(){}
+  ngOnInit(): void {
+    
+  }
+
 }

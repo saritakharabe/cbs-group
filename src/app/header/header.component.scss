@@ -1,0 +1,171 @@
+.box-blog {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  overflow: scroll;
+}
+.bgimage{
+  background-image: url("/assets/images.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+  position: absolute;
+}
+
+.top-field {
+  background-color: rgb(153, 116, 116);
+  font-size: 12px;
+  padding: 5px 0 5px;
+}
+.container {
+  width: 1200px;
+  max-width: 100%;
+}
+@media  (min-width: 1200px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-12 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+  }
+}
+
+ul.information {
+  float: left;
+  padding: 0;
+}
+ul.information li {
+  margin-right: 30px;
+  font-family: "Montserrat";
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 20px;
+  color: #f1a619;
+}
+
+ul.account {
+  float: right;
+  padding: 0;
+}
+ul.account li {
+  margin-left: 23px;
+  padding-left: 19px;
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 20px;
+  color: #f1a619;
+}
+
+a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+header{
+  display: block;
+}
+
+.header {
+  position: relative;
+  background-color: white;
+  display: flex;
+  transition: all .5s ease 0s;
+  z-index: 100;
+  height: 100px;
+  padding: 10px 20px;
+
+}
+
+.header-content {
+  width: 100%;
+  padding: 0 15px;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.logo {
+  margin-top: -0.9rem;
+  margin-left: 3rem;
+  width: 16%;
+  float: left;
+  transition: all 0.3s ease 0s;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+}
+.main-navbar {
+  margin-top: -0.9rem;
+  float: right;
+  font-family: inherit;
+  font-size: 125%;
+  font-weight: inherit;
+  font-style: inherit;
+  background: transparent;
+  width: 75%;
+}
+nav {
+  display: block;
+}
+.navbar-menu {
+  margin: 30px 0px 30px 0px;
+  cursor: pointer;
+  float: right;
+}
+ul.content {
+  padding: 0%;
+}
+li {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+}
+
+input[type="text"] {
+  padding: 6px;
+  font-size: 20px;
+  border: 1px solid rgb(14, 13, 13);
+}
+footer {
+  position: fixed;
+  width: 100%;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  padding: 20px 20px;
+}
+.inside-content{
+  padding-top: 100px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  flex-wrap: wrap;
+}
+h2{
+  text-align: center;
+}
