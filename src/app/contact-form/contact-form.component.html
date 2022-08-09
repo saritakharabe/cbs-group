@@ -1,0 +1,32 @@
+
+<div class="container">
+   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left"> 
+    <h3>Contact Form</h3>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" #nameRef="ngModel" class="form-control" placeholder="Your first name" ngModel required>
+            <div *ngIf="nameRef.invalid && nameRef.touched">Please enter first name</div>
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" #nameRefLast="ngModel" name="lastname" class="form-control" placeholder="Your last name" ngModel required>
+            <div *ngIf="nameRefLast.invalid && nameRefLast.touched">Pleaser enter last name</div>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Mobile Number</label>
+            <input type="number" #numberRef="ngModel" name="phoneNumber" class="form-control" placeholder="Mobile number" ngModel required>
+            <div *ngIf="numberRef.invalid && numberRef.touched">Pleaser enter number</div>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Message</label>
+            <textarea #messageRef="ngModel" name="message" placeholder="Write something.." style="height:200px" required ngModel></textarea>
+            <div *ngIf="messageRef.invalid && messageRef.touched">Pleaser enter your message</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>  
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+    <h2>{{header}}</h2>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="Id">Id</label>
+            <input type="text" class="form-control" name="id" [ngModel]="customer.id" #id="ngModel" ngModel required>
+            <div *ngIf="id.invalid && id.touched"> Enter valid Id</div>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" [ngModel]="customer.name" #name="ngModel" ngModel required>
+            <div *ngIf="name.invalid && name.touched"> Enter Valid Name</div>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" name="address" [ngModel]="customer.address" #address="ngModel" ngModel required>
+            <div *ngIf="address.invalid && address.touched"> Enter Valid Address</div>
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" [ngModel]="customer.email" #email="ngModel" ngModel required>
+            <div *ngIf="email.invalid && email.touched"> Enter Valid email</div>
+
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" class="form-control" name="phoneNumber" [ngModel]="customer.phoneNumber" #number="ngModel" ngModel required>
+            <div *ngIf="number.invalid && number.touched"> Enter Valid phone number</div>
+
+        </div>
+        <div class="form-group">
+            <label for="identity">Identity</label>
+            <input type="text" class="form-control" name="identity" [ngModel]="customer.identity" #identity="ngModel" ngModel required>
+            <div *ngIf="identity.invalid && identity.touched"> Enter Valid identity</div>
+
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,96 @@
+h3{
+    margin-left: 30px;
+}
+form {
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    }
+.container {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+input[type="text"],textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="number"]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button{
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+input.ng-valid{
+  border: 1px solid blue;
+}
+
+textarea.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+textarea.ng-valid{
+  border: 1px solid blue;
+}
+
+.row {
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 5;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  display: block
+}
+.contact-section .contact-info {
+  background-color: #f8f8f8;
+  padding: 40px;
+  contain: content;
+}
+h4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+p{
+  font-size: 20px!important;
+    line-height: 25px;
+    color: #333;
+    font-weight: 300;
+    font-family: brandon-grotesque,sans-serif;
+}
