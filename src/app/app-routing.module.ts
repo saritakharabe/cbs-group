@@ -5,8 +5,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AddEditCustomerComponent } from './customer-data/add-edit-customer/add-edit-customer.component';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
 import { CustomerListComponent } from './customer-data/customer-list/customer-list.component';
+import { CustomerServicesComponent } from './customer-services/customer-services.component';
 import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './services/services.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
 
 const routes: Routes = [
@@ -21,7 +21,7 @@ const routes: Routes = [
       ]
   },
   { path: 'team-member', component: TeamMembersComponent},
-  { path: 'services', component: ServicesComponent},
+  { path: 'services', component: CustomerServicesComponent},
   { path: 'contact', component: ContactFormComponent}
 ];
 

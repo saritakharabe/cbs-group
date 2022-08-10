@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class TeamMembersComponent implements OnInit {
 
+  title: string = "Our Team Members";
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

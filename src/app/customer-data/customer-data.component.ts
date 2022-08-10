@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { CustomerDataService } from '../shared/customer-data.service';
-import { CustomerModel } from '../shared/customer.model';
 
 @Component({
   selector: 'app-customer-data',
@@ -11,7 +8,7 @@ import { CustomerModel } from '../shared/customer.model';
 export class CustomerDataComponent implements OnInit {
 
 
-  constructor(private route: Router, private customerService: CustomerDataService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

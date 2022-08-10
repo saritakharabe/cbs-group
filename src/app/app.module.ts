@@ -11,9 +11,9 @@ import { TeamMembersComponent } from './team-members/team-members.component';
 import { AddEditCustomerComponent } from './customer-data/add-edit-customer/add-edit-customer.component';
 import { CustomerListComponent } from './customer-data/customer-list/customer-list.component';
 import { AddEditMembersComponent } from './team-members/add-edit-members/add-edit-members.component';
-import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { CustomerDataService } from './services/customer-data.service';
 
 
 @NgModule({
@@ -27,7 +27,6 @@ import { HomeComponent } from './home/home.component';
     AddEditCustomerComponent,
     CustomerListComponent,
     AddEditMembersComponent,
-    ServicesComponent,
     FooterComponent,
     HomeComponent,
   ],
@@ -37,7 +36,7 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CustomerDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

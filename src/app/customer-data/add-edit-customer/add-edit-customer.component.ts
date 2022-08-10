@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CustomerDataService } from 'src/app/shared/customer-data.service';
+import { CustomerDataService } from 'src/app/services/customer-data.service';
 import { CustomerModel } from 'src/app/shared/customer.model';
 
 @Component({
@@ -15,7 +15,7 @@ export class AddEditCustomerComponent implements OnInit {
   header: string;
   customer: CustomerModel = {}
 
-  constructor(private router: ActivatedRoute, private customerService: CustomerDataService, private route: Router) { }
+  constructor(private router: ActivatedRoute, private route: Router, private customerService: CustomerDataService ) { }
 
   ngOnInit(): void {
     this.id = +this.router.snapshot.paramMap.get('id');

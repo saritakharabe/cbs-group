@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { CustomerModel } from './customer.model';
+import { CustomerModel } from '../shared/customer.model';
+
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +31,7 @@ export class CustomerDataService {
     return this.customers;
   }
 
-  onGetcustomer(id: number){
+  onGetcustomer(id: number): CustomerModel{
     return this.customers.find( x => x.id === id);
   }
 
